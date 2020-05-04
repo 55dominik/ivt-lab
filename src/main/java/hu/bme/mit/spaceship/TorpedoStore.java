@@ -31,11 +31,9 @@ public class TorpedoStore {
       }
     }
 
-    try {
-      rand = SecureRandom.getInstanceStrong(); 
-    } catch (NoSuchAlgorithmException e) {
+    
       rand = new Random();
-    }
+    
   }
 
   public boolean fire(int numberOfTorpedos){
